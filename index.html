@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
     <head>
-        <title>GeoAR.js demo</title>
+        <title>GeoAR1.js demo</title>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
@@ -28,6 +28,14 @@
                     look-at="[gps-camera]"
                     animation-mixer="loop: repeat"
                     gltf-model="#animated-asset"
+                    scale="0.9975820971489867 0.9975820971489867 0.9975820971489867"
+                    gps-entity-place="latitude: 50.092258; longitude: 8.57765;"
+                ></a-entity>
+            
+            <a-entity
+                    look-at="[gps-camera]"
+                    animation-mixer="loop: repeat"
+                    gltf-model="assets/pokemon_arena/scene.gltf"
                     scale="0.9975820971489867 0.9975820971489867 0.9975820971489867"
                     gps-entity-place="latitude: 50.092258; longitude: 8.57765;"
                 ></a-entity>

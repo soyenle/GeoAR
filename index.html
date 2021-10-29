@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
     <head>
+        <title>GeoAR.js demo</title>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
@@ -30,13 +31,7 @@
                     scale="0.9975820971489867 0.9975820971489867 0.9975820971489867"
                     gps-entity-place="latitude: 50.092258; longitude: 8.57765;"
                 ></a-entity>
-                <a-entity
-                    look-at="[gps-camera]"
-                    animation-mixer="loop: repeat"
-                    gltf-model="#animated-asset"
-                    scale="0.9975820971489867 0.9975820971489867 0.9975820971489867"
-                    gps-entity-place="latitude: 50.09605746152825; longitude: 8.598445616662504;"
-                ></a-entity>
+                
 
             <a-camera gps-camera rotation-reader></a-camera>
         </a-scene>

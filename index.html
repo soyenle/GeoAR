@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
     <head>
-        <title>GeoAR.js demo</title>
+        <title>1GeoAR.js demo</title>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
@@ -10,6 +10,23 @@
         <script src="https://raw.githack.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>        
       
     </head>
+    
+    <script>
+// Component to make a popup window for the quiz.
+AFRAME.registerComponent('cursor-listener', {
+  init: function () {
+    
+    this.el.addEventListener('gps-entity-place-loaded', function (evt) {
+        
+        if (window.confirm("QuizFenster öffnen?")) {
+          window.open("https://studycore.de/");
+            } else {
+          txt = "This does Nothing";
+            }              
+    });
+  }
+});
+</script>
 
     <body style="margin: 0; overflow: hidden;">
         <a-scene
@@ -26,6 +43,7 @@
             </a-assets>
 
                 <a-entity
+                    cursor-listener
                     look-at="[gps-camera]"
                     animation-mixer="loop: repeat"
                     gltf-model="#animated-asset"

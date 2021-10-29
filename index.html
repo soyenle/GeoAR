@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
     <head>
-        <title>13GeoAR.js demo</title>
+        <title>14GeoAR.js demo</title>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
@@ -45,11 +45,9 @@ AFRAME.registerComponent('cursor-listener', {
             </a-assets>
 
             
-            <a-entity  animation="property: rotation; to: 360 360 0; loop: true; dur: 10000">
+            <a-entity  animation="property: rotation; to: 180 360 0; loop: true; dur: 10000">
                 <a-entity
                     cursor-listener
-                    
-                    animation-mixer="loop: repeat"
                     gltf-model="#animated-asset"
                     scale="0.9975820971489867 0.9975820971489867 0.9975820971489867"
                     gps-entity-place="latitude: 50.092258; longitude: 8.57765;"
@@ -61,7 +59,7 @@ AFRAME.registerComponent('cursor-listener', {
             <a-entity rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000">
             <a-entity
                     cursor-listener
-                    look-at="[gps-camera]"
+
                     animation-mixer="loop: repeat"
                     gltf-model="assets/pokemon_arena/scene.gltf"
                     scale="0.2 0.2 0.2"

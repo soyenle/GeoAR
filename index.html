@@ -16,7 +16,7 @@
 AFRAME.registerComponent('cursor-listener', {
   init: function () {
     
-    this.el.addEventListener('gps-entity-place-loaded', function (evt) {
+    this.el.addEventListener('click', function (evt) {
         
         if (window.confirm("QuizFenster öffnen?")) {
           window.open("https://studycore.de/");
@@ -57,7 +57,7 @@ AFRAME.registerComponent('cursor-listener', {
                     animation-mixer="loop: repeat"
                     gltf-model="assets/pokemon_arena/scene.gltf"
                     scale="0.2 0.2 0.2"
-                    gps-entity-place="latitude: 50.092589; longitude: 8.57659;"
+                    gps-entity-place="latitude: 50.092268; longitude: 8.577776;" 
                     
                 ></a-entity>
                 

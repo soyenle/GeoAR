@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
     <head>
-        <title>9GeoAR.js demo</title>
+        <title>10GeoAR.js demo</title>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
@@ -45,7 +45,7 @@ AFRAME.registerComponent('cursor-listener', {
             </a-assets>
 
             
-            
+            <a-entity rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000">
                 <a-entity
                     cursor-listener
                     look-at="[gps-camera]"
@@ -55,10 +55,10 @@ AFRAME.registerComponent('cursor-listener', {
                     gps-entity-place="latitude: 50.092258; longitude: 8.57765;"
                    
                 > </a-entity>
-              
+              </a-entity>
             
             
-            <a-entity rotation="0 0 0" animation="property: position; to: 0 360 0; loop: true; dur: 10000">
+            <a-entity rotation="0 0 0" animation="property: position; to: 1 8 -10; dur: 2000; easing: linear; loop: true">
             <a-entity
                     cursor-listener
                     look-at="[gps-camera]"

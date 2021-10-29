@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
     <head>
-        <title>27GeoAR.js demo</title>
+        <title>28GeoAR.js demo</title>
         <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
         <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
         <script src="https://raw.githack.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>           
@@ -34,7 +34,7 @@ AFRAME.registerComponent('cursor-listener', {
                 ></a-asset-item>
             </a-assets>          
            
-             <a-entity rotation="0 0 0" animation="property: rotation; to: 180 360 180; loop: true; dur: 20000">
+             <a-entity rotation="0 0 60" animation="property: rotation; to: 180 360 180; loop: true; dur: 20000">
                 <a-entity
                     cursor-listener
                     gltf-model="#animated-asset"
@@ -43,7 +43,7 @@ AFRAME.registerComponent('cursor-listener', {
                 ></a-entity>              
                  </a-entity>
             
-            <a-entity rotation="0 0 0" animation="property: rotation; to: 180 360 180; loop: true; dur: 20000">
+            <a-entity rotation="20 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 20000">
             <a-entity
                     cursor-listener                   
                     gltf-model="assets/pokemon_arena/scene.gltf"

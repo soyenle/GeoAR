@@ -1,35 +1,25 @@
 <!doctype html>
 <html>
     <head>
-        <title>15GeoAR.js demo</title>
+        <title>16GeoAR.js demo</title>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
         <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
         <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
-        <script src="https://raw.githack.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>   
-        
-        <script src="https://raw.githack.com/AR-js-org/studio-backend/master/src/modules/marker/tools/gesture-detector.js"></script>
-        <script src="https://raw.githack.com/AR-js-org/studio-backend/master/src/modules/marker/tools/gesture-handler.js"></script>
-       
-      
+        <script src="https://raw.githack.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>           
     </head>
     
     <script>
 // Component to make a popup window for the quiz.
 AFRAME.registerComponent('cursor-listener', {
-  init: function () {
-    
-    this.el.addEventListener('click', function (evt) {
-        
+  init: function () {    
+    this.el.addEventListener('click', function (evt) {       
         if (window.confirm("QuizFenster öffnen?")) {
           window.open("https://studycore.de/");
             } else {
           txt = "This does Nothing";
-            }              
-    });
-  }
-});
+            }  });}});
 </script>
 
     <body style="margin: 0; overflow: hidden;">
@@ -45,27 +35,24 @@ AFRAME.registerComponent('cursor-listener', {
                     id="animated-asset"
                     src="assets/asset.gltf"
                 ></a-asset-item>
-            </a-assets>
-
-            
+            </a-assets>          
            
+             <a-entity rotation="0 0 90" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000">
                 <a-entity
                     cursor-listener
                     gltf-model="#animated-asset"
                     scale="0.9975820971489867 0.9975820971489867 0.9975820971489867"
-                    gps-entity-place="latitude: 50.092258; longitude: 8.57765;"
-                   gesture-handler
-                > </a-entity>
-              
+                    gps-entity-place="latitude: 50.092258; longitude: 8.57765;"                  
+                ></a-entity>              
+                 </a-entity>
             
-            
-            <a-entity rotation="0 0 0" animation="property: rotation; to: 0 360 180; loop: true; dur: 10000">
+            <a-entity rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000">
             <a-entity
                     cursor-listener
-
                     animation-mixer="loop: repeat"
                     gltf-model="assets/pokemon_arena/scene.gltf"
                     scale="0.2 0.2 0.2"
+                    position="0 0 0"
                     gps-entity-place="latitude: 50.092268; longitude: 8.577776;" 
                     
                 ></a-entity>

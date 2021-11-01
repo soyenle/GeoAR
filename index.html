@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
     <head>
-        <title>ModelCopy2</title>
+        <title>ModelCopy3</title>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
@@ -57,6 +57,14 @@ AFRAME.registerComponent('cursor-listener', {
                     gltf-model="assets/pokemon_center/scene.gltf"
                     scale="0.1 0.1 0.1"                   
                     gps-entity-place="latitude: 50.092256; longitude: 8.57766;"
+                    animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"
+                    cursor-listener
+                ></a-entity>
+            
+            <a-entity                      
+                    gltf-model="assets/mewtwo/scene.gltf"
+                    scale="0.1 0.1 0.1"                   
+                    gps-entity-place="latitude: 50.092256; longitude: 8.57767;"
                     animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"
                     cursor-listener
                 ></a-entity>

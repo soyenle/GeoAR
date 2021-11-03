@@ -1,15 +1,14 @@
 <!doctype html>
 <html>
     <head>
-        <title>1GeoAR</title>
+        <title>GeoAR</title>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
         <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
         <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
         <script src="https://raw.githack.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
-        <script src="https://raw.githack.com/AR-js-org/studio-backend/master/src/modules/marker/tools/gesture-detector.js"></script>
-        <script src="https://raw.githack.com/AR-js-org/studio-backend/master/src/modules/marker/tools/gesture-handler.js"></script>
+       
     </head>
     
     <script>
@@ -31,7 +30,7 @@ AFRAME.registerComponent('cursor-listener', {
             loading-screen="enabled: false;"
             arjs="sourceType: webcam; debugUIEnabled: false;"
             vr-mode-ui="enabled: false;"
-            gesture-detector
+            
         >
             <a-assets>
                 <a-asset-item
@@ -46,7 +45,7 @@ AFRAME.registerComponent('cursor-listener', {
                     gps-entity-place="latitude: 50.092258; longitude: 8.57765;"
                     animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"
                     cursor-listener
-                    gesture-handler
+                    
                 ></a-entity>
             
             <a-entity                      

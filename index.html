@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
     <head>
-        <title>GeoAR</title>
+        <title>1GeoAR</title>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
@@ -98,7 +98,7 @@ AFRAME.registerComponent('cursor-listener', {
             
             
             
-            <a-camera gps-camera="maxDistance: 20;" rotation-reader look-controls-enabled='false' arjs-look-controls='smoothingFactor: 0.1'   >
+            <a-camera gps-camera rotation-reader   >
             <a-entity cursor="fuse: true; fuseTimeout: 5"
             position="0 0 -1"
             geometry="primitive: ring; radiusInner: 0.005; radiusOuter: 0.01"

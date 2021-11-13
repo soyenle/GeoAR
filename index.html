@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
     <head>
-        <title>4GeoAR</title>
+        <title>5GeoAR</title>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
@@ -11,20 +11,11 @@
        
     </head>
     
-    <script>
-// Component to make a popup window for the quiz.
-AFRAME.registerComponent('cursor-listener', {
-  init: function () {    
-    this.el.addEventListener('click', function (evt) {       
-        if (window.confirm("QuizFenster öffnen?")) {
-          window.open("https://studycore.de/");
-            } else {
-          txt = "This does Nothing";
-            }  });}});
-</script>
+
     
     <script src="./gesture-handler.js"></script>
     <script src="./gesture-detector.js"></script>
+    <script src="./events.js"></script>
     
     
     <style>
@@ -44,7 +35,7 @@ AFRAME.registerComponent('cursor-listener', {
     <body style="margin: 0; overflow: hidden;">
         
      <div class="buttons">
-     <button class="Test" type = "button" id = "btn" onclick = "Quiz1()"> LinkButton </button>
+     <button class="Test" type = "button" id = "btn" onclick = "Quiz2()"> LinkButton </button>
     </div>
         
         <a-scene
@@ -68,7 +59,7 @@ AFRAME.registerComponent('cursor-listener', {
                     scale="0.6 0.6 0.6"                   
                     gps-entity-place="latitude: 50.092258; longitude: 8.57765;"
                    
-                    cursor-listener
+                    listener1
                     gesture-handler
                 ></a-entity>
             
@@ -78,6 +69,7 @@ AFRAME.registerComponent('cursor-listener', {
                     gps-entity-place="latitude: 50.09154787268716; longitude: 8.578569274395704;"
                     animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"
                     cursor-listener
+                      
                 ></a-entity>
 
             <a-entity                      

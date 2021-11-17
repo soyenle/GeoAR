@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
     <head>
-        <title>4GeoAR</title>
+        <title>5GeoAR</title>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
@@ -45,7 +45,7 @@
                     gltf-model="#animated-asset"
                     scale="0.6 0.6 0.6"                   
                     gps-entity-place="latitude: 50.092258; longitude: 8.57765;"
-                   
+                    animation="property: rotation; to: 360 360 0; loop: true; dur: 10000"
                     listener1
                       gesture-handler
                 ></a-entity>
@@ -64,7 +64,7 @@
                     gltf-model="assets/pokemon_center/scene.gltf"
                     scale="0.5 0.5 0.5"                   
                     gps-entity-place="latitude: 50.091966; longitude: 8.578261;"
-                    
+                    animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"
                     listener3
                       gesture-handler
                 ></a-entity>
@@ -73,7 +73,7 @@
                     gltf-model="assets/mewtwo/scene.gltf"
                     scale="0.05 0.05 0.05"                   
                     gps-entity-place="latitude: 50.091877; longitude: 8.578642;"
-                    
+                    animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"
                     listener4
                       gesture-handler
                 ></a-entity>
@@ -91,7 +91,7 @@
                     gltf-model="assets/shenron_dragon_ball/scene.gltf"
                     scale="0.05 0.05 0.05"                    
                     gps-entity-place="latitude: 50.091440; longitude: 8.579270;"
-                    
+                    animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"
                     listener1
                        gesture-handler
                 ></a-entity>
@@ -100,14 +100,14 @@
                     gltf-model="assets/ash_ketchum/scene.gltf"
                     scale="0.8 0.8 0.8"                   
                     gps-entity-place="latitude: 50.091168; longitude: 8.580446;"
-                   
+                    animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"
                     listener1
                     gesture-handler
                 ></a-entity>
             
             
             
-            <a-camera gps-camera="maxDistance: 1;" rotation-reader   >
+            <a-camera gps-camera="maxDistance: 5;" rotation-reader   >
             <a-entity cursor="fuse: true; fuseTimeout: 5"
             position="0 0 -1"
             geometry="primitive: ring; radiusInner: 0.005; radiusOuter: 0.01"

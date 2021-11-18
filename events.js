@@ -38,6 +38,23 @@ AFRAME.registerComponent('listener1', {
             document.getElementById("btn").onclick = Quiz4;      
     }); }});
 
+   AFRAME.registerComponent('listener5', {
+  init: function () {
+    this.el.addEventListener('mouseenter', function (evt) {
+        var doc = document.getElementById("btn");             
+            // Changing the text content
+            doc.textContent = "Quiz5";
+            document.getElementById("btn").onclick = Quiz5;      
+    }); }});
+
+   AFRAME.registerComponent('listener6', {
+  init: function () {
+    this.el.addEventListener('mouseenter', function (evt) {
+        var doc = document.getElementById("btn");             
+            // Changing the text content
+            doc.textContent = "Quiz6";
+            document.getElementById("btn").onclick = Quiz6;      
+    }); }});
 
 
          function Quiz1() {           
@@ -49,6 +66,12 @@ AFRAME.registerComponent('listener1', {
          function Quiz3() {           
             window.open("https://bing.de/");
          }
-         function Quiz3() {           
+         function Quiz4() {           
             window.open("https://yahoo.de/");
+         }
+         function Quiz5() {           
+            window.open("https://amazon.de/");
+         }
+         function Quiz6() {           
+            window.open("https://youtube.de/");
          }

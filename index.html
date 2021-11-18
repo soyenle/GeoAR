@@ -1,11 +1,11 @@
 <!doctype html>
 <html>
     <head>
-        <title>2GeoAR</title>
+        <title>GeoAR</title>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
-          <script src='https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js'></script>
+        <script src='https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js'></script>
     </head>
     
 
@@ -42,7 +42,7 @@
                     gltf-model="#animated-asset"
                     scale="0.6 0.6 0.6"                   
                     gps-entity-place="latitude: 50.092258; longitude: 8.57765;"
-                    animation="property: rotation; to: 360 360 0; loop: true; dur: 10000"
+                    
                     listener1
                       gesture-handler
                 ></a-entity>
@@ -80,7 +80,7 @@
                     scale="0.2 0.2 0.2"                   
                     gps-entity-place="latitude: 50.091736; longitude: 8.578841;"
                     animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"
-                    listener4
+                    listener5
                        gesture-handler
                 ></a-entity>
             
@@ -89,7 +89,7 @@
                     scale="0.005 0.005 0.005"                    
                     gps-entity-place="latitude: 50.091440; longitude: 8.579270;"
                     animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"
-                    listener1
+                    listener6
                        gesture-handler
                 ></a-entity>
             
@@ -98,13 +98,13 @@
                     scale="0.8 0.8 0.8"                   
                     gps-entity-place="latitude: 50.091168; longitude: 8.580446;"
                     animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"
-                    listener1
+                    listener6
                     gesture-handler
                 ></a-entity>
             
             
             
-            <a-camera gps-camera="minDistance: 0; maxDistance: 50;" rotation-reader   >
+            <a-camera gps-camera="minDistance: 0; maxDistance: 10;" rotation-reader   >
             <a-entity cursor="fuse: true; fuseTimeout: 5"
             position="0 0 -1"
             geometry="primitive: ring; radiusInner: 0.005; radiusOuter: 0.01"

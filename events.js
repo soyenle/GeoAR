@@ -89,7 +89,10 @@ AFRAME.registerComponent('listener1', {
    
     AFRAME.registerComponent('listener0', {
     init: function () {
-    window.open("https://google.de/");
+    document.getElementById('Distance1').textContent = `Distanz:${document.getElementById('Model1').getAttribute('distanceMsg')}`;
+    
+    Distance_Show();
+    
     
     
     

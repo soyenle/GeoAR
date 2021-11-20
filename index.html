@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
     <head>
-        <title>4 GeoAR</title>
+        <title>SoyenLeGeoAR</title>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
@@ -18,6 +18,13 @@
 
     <body style="margin: 0; overflow: hidden;">
         
+     <div id="Distance1" ></div>
+     <div id="Distance2" ></div>
+     <div id="Distance3" ></div>
+     <div id="Distance4" ></div>
+     <div id="Distance5" ></div>
+     <div id="Distance6" ></div>
+        
      <div class="buttons">
      <button class="Test" type = "button" id = "btn" onclick = "Quiz2()"> LinkButton </button>
     </div>
@@ -29,6 +36,7 @@
             arjs="sourceType: webcam; debugUIEnabled: false;"
             vr-mode-ui="enabled: false;"
             gesture-detector
+            Distance
             
         >
             <a-assets>
@@ -38,7 +46,8 @@
                 ></a-asset-item>
             </a-assets>
 
-                <a-entity                      
+                <a-entity
+                    id="Model1"
                     gltf-model="#animated-asset"
                     scale="0.6 0.6 0.6"                   
                     gps-entity-place="latitude: 50.092258; longitude: 8.57765;"
@@ -47,7 +56,8 @@
                       gesture-handler
                 ></a-entity>
             
-            <a-entity                      
+            <a-entity          
+                    id="Model2"
                     gltf-model="assets/pokemon_arena/scene.gltf"
                     scale="0.1 0.1 0.1"                   
                     gps-entity-place="latitude: 50.092238; longitude: 8.578169;"
@@ -57,7 +67,8 @@
                       
                 ></a-entity>
 
-            <a-entity                      
+            <a-entity  
+                    id="Model3"  
                     gltf-model="assets/pokemon_center/scene.gltf"
                     scale="0.2 0.2 0.2"                   
                     gps-entity-place="latitude: 50.091966; longitude: 8.578261;"
@@ -66,7 +77,8 @@
                       gesture-handler
                 ></a-entity>
             
-            <a-entity                      
+            <a-entity
+                    id="Model4"  
                     gltf-model="assets/mewtwo/scene.gltf"
                     scale="0.005 0.005 0.005"                   
                     gps-entity-place="latitude: 50.091877; longitude: 8.578642;"
@@ -75,7 +87,8 @@
                       gesture-handler
                 ></a-entity>
             
-             <a-entity                      
+             <a-entity
+                    id="Model5"   
                     gltf-model="assets/magnemite/magnemite/scene.gltf"
                     scale="0.2 0.2 0.2"                   
                     gps-entity-place="latitude: 50.091736; longitude: 8.578841;"
@@ -84,7 +97,8 @@
                        gesture-handler
                 ></a-entity>
             
-               <a-entity                      
+               <a-entity
+                    id="Model6"     
                     gltf-model="assets/shenron_dragon_ball/scene.gltf"
                     scale="0.005 0.005 0.005"                    
                     gps-entity-place="latitude: 50.091440; longitude: 8.579270;"

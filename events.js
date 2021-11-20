@@ -90,7 +90,7 @@ AFRAME.registerComponent('listener1', {
     AFRAME.registerComponent('Distance', {
     init: function () {
     
-    document.getElementById('Distance1').textContent = `Distanz:${document.getElementById('Model1').getAttribute('distanceMsg')}`;
+    document.getElementById('Distance1').textContent = `Distanz:${document.getElementById('Model2').getAttribute('distanceMsg')}`;
     
     Distance_Show();
   }

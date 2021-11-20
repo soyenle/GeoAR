@@ -87,10 +87,10 @@ AFRAME.registerComponent('listener1', {
     setTimeout(Distance_Show, 5000);
 }
    
-    AFRAME.registerComponent('Distancee', {
+    AFRAME.registerComponent('listener0', {
     init: function () {
     window.open("https://google.de/");
-    document.getElementById('Distance1').textContent = `Distanz:`;
+    
     
     
   }

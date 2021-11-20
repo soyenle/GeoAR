@@ -87,7 +87,7 @@ AFRAME.registerComponent('listener1', {
     setTimeout(Distance_Show, 5000);
 }
    
-    AFRAME.registerComponent('Distance', {
+    AFRAME.registerComponent('Distancee', {
     init: function () {
     
     document.getElementById('Distance1').textContent = `Distanz:`;

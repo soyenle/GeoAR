@@ -1,11 +1,4 @@
-AFRAME.registerComponent('bugfix', {
-  init: function () {
-    this.el.addEventListener('mouseenter', function (evt) {
-        var doc = document.getElementById("btn");             
-            // Changing the text content
-            doc.textContent = "Instructions";
-            document.getElementById("btn").onclick = Quiz0;      
-    }); }});
+
 
 // Component to make a popup window for the quiz.
 AFRAME.registerComponent('listener1', {
@@ -62,6 +55,15 @@ AFRAME.registerComponent('listener1', {
             // Changing the text content
             doc.textContent = "Quiz6";
             document.getElementById("btn").onclick = Quiz6;      
+    }); }});
+
+AFRAME.registerComponent('bugfix', {
+  init: function () {
+    this.el.addEventListener('mouseenter', function (evt) {
+        var doc = document.getElementById("btn");             
+            // Changing the text content
+            doc.textContent = "Instructions";
+            document.getElementById("btn").onclick = Quiz0;      
     }); }});
 
          function Quiz0() {           

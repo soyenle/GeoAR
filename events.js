@@ -56,7 +56,9 @@ AFRAME.registerComponent('listener1', {
             document.getElementById("btn").onclick = Quiz6;      
     }); }});
 
-
+         function Quiz0() {           
+            window.alert("Begebe dich in die nähe eines 3D-Modells (<15m) \n Danach lässt sich ein Quizfenster öffnen");
+        }
          function Quiz1() {           
             window.open("https://studycore.de/");
         }
@@ -90,8 +92,11 @@ AFRAME.registerComponent('listener1', {
     AFRAME.registerComponent('listener0', {
     init: function () {
     document.getElementById('Distance1').textContent = `Distanz:${document.getElementById('Model1').getAttribute('distanceMsg')}`;
+      
+    doc.textContent = "Instructions";
+    document.getElementById("btn").onclick = Quiz0;
     
-    Distance_Show();
+      Distance_Show();
     
     
     

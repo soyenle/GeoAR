@@ -1,3 +1,11 @@
+AFRAME.registerComponent('bugfix', {
+  init: function () {
+    this.el.addEventListener('mouseenter', function (evt) {
+        var doc = document.getElementById("btn");             
+            // Changing the text content
+            doc.textContent = "Instructions";
+            document.getElementById("btn").onclick = Quiz0;      
+    }); }});
 
 // Component to make a popup window for the quiz.
 AFRAME.registerComponent('listener1', {
@@ -92,8 +100,6 @@ AFRAME.registerComponent('listener1', {
     AFRAME.registerComponent('listener0', {
     init: function () {
     document.getElementById('Distance1').textContent = `Distanz:${document.getElementById('Model1').getAttribute('distanceMsg')}`;
-    document.getElementById("btn").textContent = "Instructions";
-    document.getElementById("btn").onclick = Quiz0;  
       Distance_Show();
     
     

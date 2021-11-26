@@ -92,9 +92,6 @@ AFRAME.registerComponent('listener1', {
     AFRAME.registerComponent('listener0', {
     init: function () {
     document.getElementById('Distance1').textContent = `Distanz:${document.getElementById('Model1').getAttribute('distanceMsg')}`;
-      
-    doc.textContent = "Instructions";
-    document.getElementById("btn").onclick = Quiz0;
     
       Distance_Show();
     

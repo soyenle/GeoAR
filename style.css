@@ -1,15 +1,28 @@
 
     .buttons {
       position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
+      bottom: 10%;
+      left: 0%;
+      width: 25%;
+      height: 5em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 15;
+    }
+
+    .help {
+      position: absolute;
+      bottom: 2.5%;
+      left: 0%;
+      width: 25%;
       height: 5em;
       display: flex;
       justify-content: center;
       align-items: center;
       z-index: 10;
     }
+
 
  #Distance1 { 
         border-radius: 15px;

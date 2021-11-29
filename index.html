@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
     <head>
-        <title> 1SoyenLeGeoAR</title>
+        <title> SoyenLeGeoAR</title>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
@@ -52,7 +52,7 @@
                     gltf-model="#animated-asset"
                     scale="0.6 0.6 0.6"                   
                     gps-entity-place="latitude: 50.092258; longitude: 8.57765;"
-                    
+                    animation="property: rotation; to: 360 360 0; loop: true; dur: 10000"
                                 
                     listener1
                       gesture-handler
@@ -108,16 +108,6 @@
                     animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"
                     listener6
                        gesture-handler
-                ></a-entity>
-            
-            <a-entity                      
-                    gltf-model="assets/ash_ketchum/scene.gltf"
-                    scale="0.8 0.8 0.8"                   
-                    gps-entity-place="latitude: 50.091168; longitude: 8.580446;"
-                    animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"
-                    
-                      bugfix
-                    gesture-handler
                 ></a-entity>
             
             <a-entity                      

@@ -57,5 +57,25 @@ AFRAME.registerComponent('listener1', {
             document.getElementById("btn").onclick = Quiz6;      
     }); }});
 
-
+          function Quiz0() {           
+            window.alert("Begebe dich in die nähe eines 3D-Modells (<15m) \nDanach lässt sich ein Quizfenster öffnen");
+        }
+         function Quiz1() {           
+            window.open("https://studycore.de/");
+        }
+         function Quiz2() {           
+            window.open("https://google.de/");
+         }
+         function Quiz3() {           
+            window.open("https://bing.de/");
+         }
+         function Quiz4() {           
+            window.open("https://yahoo.de/");
+         }
+         function Quiz5() {           
+            window.open("https://amazon.de/");
+         }
+         function Quiz6() {           
+            window.open("https://youtube.de/");
+         }
       

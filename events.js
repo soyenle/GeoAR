@@ -79,3 +79,10 @@ AFRAME.registerComponent('listener1', {
             window.open("https://youtube.de/");
          }
       
+
+ AFRAME.registerComponent('listener0', {
+    init: function () {
+    document.getElementById('Distance1').textContent = `Distanz:${document.getElementById('Model1').getAttribute('distanceMsg')}`;
+        
+  }
+});

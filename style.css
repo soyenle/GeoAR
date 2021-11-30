@@ -1,13 +1,13 @@
     .buttons {
-      border-radius: 15px;
-        font-size: 10px;
-        z-index: 10000;
-        background-color: white;
-        padding: 5px;
-        display: block;     
       position: absolute;
-      bottom: 0%;
+      bottom: 10%;
       left: 0%;
+      width: 25%;
+      height: 5em;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      z-index: 10;
     }
 
     .help {
@@ -17,7 +17,7 @@
       width: 25%;
       height: 5em;
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: center;
       z-index: 10;
     }

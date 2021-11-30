@@ -6,7 +6,7 @@ AFRAME.registerComponent('listener1', {
     this.el.addEventListener('mouseenter', function (evt) {
         var doc = document.getElementById("btn");             
             // Changing the text content
-            doc.textContent = "Quiz1";
+            doc.textContent = "Öffne Quiz1";
             document.getElementById("btn").onclick = Quiz1;    
     });
   }
@@ -17,7 +17,7 @@ AFRAME.registerComponent('listener1', {
     this.el.addEventListener('mouseenter', function (evt) {
         var doc = document.getElementById("btn");             
             // Changing the text content
-            doc.textContent = "Quiz2";
+            doc.textContent = "Öffne Quiz2";
             document.getElementById("btn").onclick = Quiz2;      
     }); }});
 
@@ -26,7 +26,7 @@ AFRAME.registerComponent('listener1', {
     this.el.addEventListener('mouseenter', function (evt) {
         var doc = document.getElementById("btn");             
             // Changing the text content
-            doc.textContent = "Quiz3";
+            doc.textContent = "Öffne Quiz3";
             document.getElementById("btn").onclick = Quiz3;      
     }); }});
 
@@ -35,7 +35,7 @@ AFRAME.registerComponent('listener1', {
     this.el.addEventListener('mouseenter', function (evt) {
         var doc = document.getElementById("btn");             
             // Changing the text content
-            doc.textContent = "Quiz4";
+            doc.textContent = "Öffne Quiz4";
             document.getElementById("btn").onclick = Quiz4;      
     }); }});
 
@@ -44,7 +44,7 @@ AFRAME.registerComponent('listener1', {
     this.el.addEventListener('mouseenter', function (evt) {
         var doc = document.getElementById("btn");             
             // Changing the text content
-            doc.textContent = "Quiz5";
+            doc.textContent = "Öffne Quiz5";
             document.getElementById("btn").onclick = Quiz5;      
     }); }});
 
@@ -53,18 +53,10 @@ AFRAME.registerComponent('listener1', {
     this.el.addEventListener('mouseenter', function (evt) {
         var doc = document.getElementById("btn");             
             // Changing the text content
-            doc.textContent = "Quiz6";
+            doc.textContent = "Öffne Quiz6";
             document.getElementById("btn").onclick = Quiz6;      
     }); }});
 
-AFRAME.registerComponent('bugfix', {
-  init: function () {
-    this.el.addEventListener('mouseenter', function (evt) {
-        var doc = document.getElementById("btn");             
-            // Changing the text content
-            doc.textContent = "Instructions";
-            document.getElementById("btn").onclick = Quiz0;      
-    }); }});
 
          function Quiz0() {           
             window.alert("Begebe dich in die nähe eines 3D-Modells (<15m) \n Danach lässt sich ein Quizfenster öffnen");

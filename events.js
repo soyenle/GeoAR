@@ -81,7 +81,7 @@ AFRAME.registerComponent('listener1', {
       
 
 function Distance_Show(){
-    document.getElementById('Distance1').textContent = `1Distanz:${document.getElementById('Model1').getAttribute('distanceMsg')}`;
+    document.getElementById('Distance1').textContent = `Distanz:${document.getElementById('Model1').getAttribute('distanceMsg')}`;
     document.getElementById('Distance2').textContent = `Distanz:${document.getElementById('Model2').getAttribute('distanceMsg')}`;
       document.getElementById('Distance3').textContent = `Distanz:${document.getElementById('Model3').getAttribute('distanceMsg')}`;
     document.getElementById('Distance4').textContent = `Distanz:${document.getElementById('Model4').getAttribute('distanceMsg')}`;

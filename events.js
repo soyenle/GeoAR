@@ -6,7 +6,7 @@ AFRAME.registerComponent('listener1', {
     this.el.addEventListener('mouseenter', function (evt) {
         var doc = document.getElementById("btn");             
             // Changing the text content
-            doc.textContent = "Öffne Quiz1";
+            doc.textContent = "Quiz1";
             document.getElementById("btn").onclick = Quiz1;    
     });
   }
@@ -17,7 +17,7 @@ AFRAME.registerComponent('listener1', {
     this.el.addEventListener('mouseenter', function (evt) {
         var doc = document.getElementById("btn");             
             // Changing the text content
-            doc.textContent = "Öffne Quiz2";
+            doc.textContent = "Quiz2";
             document.getElementById("btn").onclick = Quiz2;      
     }); }});
 
@@ -26,7 +26,7 @@ AFRAME.registerComponent('listener1', {
     this.el.addEventListener('mouseenter', function (evt) {
         var doc = document.getElementById("btn");             
             // Changing the text content
-            doc.textContent = "Öffne Quiz3";
+            doc.textContent = "Quiz3";
             document.getElementById("btn").onclick = Quiz3;      
     }); }});
 
@@ -35,7 +35,7 @@ AFRAME.registerComponent('listener1', {
     this.el.addEventListener('mouseenter', function (evt) {
         var doc = document.getElementById("btn");             
             // Changing the text content
-            doc.textContent = "Öffne Quiz4";
+            doc.textContent = "Quiz4";
             document.getElementById("btn").onclick = Quiz4;      
     }); }});
 
@@ -44,7 +44,7 @@ AFRAME.registerComponent('listener1', {
     this.el.addEventListener('mouseenter', function (evt) {
         var doc = document.getElementById("btn");             
             // Changing the text content
-            doc.textContent = "Öffne Quiz5";
+            doc.textContent = "Quiz5";
             document.getElementById("btn").onclick = Quiz5;      
     }); }});
 
@@ -53,13 +53,13 @@ AFRAME.registerComponent('listener1', {
     this.el.addEventListener('mouseenter', function (evt) {
         var doc = document.getElementById("btn");             
             // Changing the text content
-            doc.textContent = "Öffne Quiz6";
+            doc.textContent = "Quiz6";
             document.getElementById("btn").onclick = Quiz6;      
     }); }});
 
 
          function Quiz0() {           
-            window.alert("Begebe dich in die nähe eines 3D-Modells (<15m) \n Danach lässt sich ein Quizfenster öffnen");
+            window.alert("Begebe dich in die nähe eines 3D-Modells (<15m) \nDanach lässt sich ein Quizfenster öffnen");
         }
          function Quiz1() {           
             window.open("https://studycore.de/");
